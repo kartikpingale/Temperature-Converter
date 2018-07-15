@@ -19,6 +19,7 @@ public:
         fTemp = ((temp * 1.8 ) + 32);
         return fTemp;
     }
+    
     float toKelvin(float temp)
     {
         float kTemp;
@@ -31,9 +32,11 @@ int main()
 {
     temp temperature;
     int choice;
+    
     cout << "1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n3. Celsius to Kelvin" << endl;
     cout << "Select operation: ";
     cin >> choice;
+    
     switch(choice)
     {
     case 1:
@@ -45,6 +48,7 @@ int main()
             cout << "The temperature is " << fahrenheit << " F";
             break;
         }
+            
     case 2:
         {
             float celsius, fahrenheit;
@@ -54,6 +58,7 @@ int main()
             cout << "The temperature is " << celsius << " C";
             break;
         }
+            
     case 3:
         {
             float celsius, kelvin;
@@ -63,11 +68,13 @@ int main()
             cout << "The temperature is " << kelvin << " K";
             break;
         }
+            
     default:
         {
             cout << "Incorrect option! Please enter 1 or 2.";
             break;
         }
     }
+    
     return 0;
 }
